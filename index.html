@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div>
+        <h3>Pick the Casino</h3>
+
+        <label for="extreme">
+            <input type="checkbox" id="extreme" name="extreme" value="yes"> Extreme
+        </label>
+        <label for="brango">
+            <input type="checkbox" id="brango" name="brango" value="yes"> Brango
+        </label>
+        <label for="yabby">
+            <input type="checkbox" id="yabby" name="yabby" value="yes"> Yabby
+        </label>
+        <label for="limitless">
+            <input type="checkbox" id="limitless" name="limitless" value="yes"> Limitless
+        </label>
+        <!-- <label for="adrenaline">
+            <input type="checkbox" id="adrenaline" name="adrenaline" value="yes"> Adrenaline
+        </label> -->
+    </div>
+    <div>
+        <h3>Violations-Winnings voided(select one or more)</h3>
+
+        <label for="overbetting">
+            <input type="checkbox" id="overbetting" name="overbetting" value="yes"> Overbetting
+        </label>
+        <label for="playing777">
+            <input type="checkbox" id="playing777" name="playing777" value="yes"> Playing 777 slots
+        </label>
+        <label for="playingProgressive">
+            <input type="checkbox" id="playingProgressive" name="playingProgressive" value="yes"> Playing Progressives
+        </label>
+        <label for="playingLiveDealer">
+            <input type="checkbox" id="playingLiveDealer" name="playingLiveDealer" value="yes"> Playing Live Dealer
+        </label>
+        <label for="playingCouponExcludedGame">
+            <input type="checkbox" id="playingCouponExcludedGame" name="playingCouponExcludedGame" value="yes"> Playing Coupon Excluded game(if player was playing any restricted games other than the 777, Live Dealer or Progressive games)
+        </label>
+        <label for="onlyOnePayoutOutOfCoupon">
+            <input type="checkbox" id="onlyOnePayoutOutOfCoupon" name="onlyOnePayoutOutOfCoupon" value="yes"> Only One Payout Out of coupon
+        </label>
+        <label for="mixingFundAction">
+            <input type="checkbox" id="mixingFundAction" name="mixingFundAction" value="yes"> Mixing fund actions
+        </label>
+        <label for="depositNotInWallet">
+            <input type="checkbox" id="depositNotInWallet" name="depositNotInWallet" value="yes"> Double Spend
+        </label>
+        <label for="multipleAccounts">
+            <input type="checkbox" id="multipleAccounts" name="multipleAccounts" value="yes"> Multiple Accounts
+        </label>
+
+    </div>
+    <div>
+        <h3>Returning deposit</h3>
+        <label for="returningDeposit">
+            <input type="checkbox" id="returningDeposit" name="returningDeposit" value="yes"> Yes
+        </label>
+    </div>
+    <div>
+        <h3>Generate 'Hello, hope that you are well..' and 'Kind Regards..' (only if you are composing new email)</h3>
+        <label for="hello">
+            <input type="checkbox" id="hello" name="hello" value="yes"> Yes
+        </label>
+    </div>
+    <!-- <div>
+        <h3>Other Emails</h3>
+        <label for="depositRequiredForWithdrawal">
+            <input type="checkbox" id="depositRequiredForWithdrawal" name="depositRequiredForWithdrawal" value="yes"> Accept
+        </label>
+    </div> -->
+    <div class="btn">
+        <button onclick="generate()">
+            Generate reply
+        </button>
+    </div>
+    <div class="reply">
+        <p id="reply" class="reply">
+
+        </p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
